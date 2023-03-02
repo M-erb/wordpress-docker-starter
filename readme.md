@@ -137,8 +137,5 @@ CREATE USER 'user_name'@'179.22.34.9' IDENTIFIED BY 'great password'; GRANT ALL 
 ```sql
 CREATE USER 'user_name'@'%' IDENTIFIED BY 'great password'; GRANT ALL PRIVILEGES ON *.* TO 'user_name'@'%' WITH GRANT OPTION;
 ```
-<<<<<<< HEAD
-=======
 
 Now you should have a user to login to the admin area.
->>>>>>> dev--extra-help
