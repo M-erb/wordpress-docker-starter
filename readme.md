@@ -1,6 +1,6 @@
 # Clean Wordpress Install Starter
 
-Containerized in docker using docker compose.
+Wordpress containerized in docker using docker compose.
 
 ## Docker
 
@@ -16,22 +16,23 @@ These steps only need to to be done once for the whole server:
 
 These steps are what need to be done on each install:
 
-1. Make sure permissions are right for files --> `wordpressFiles` (if not already done)
+1. Make sure file `wordpressFiles` exists in root of project
+2. Make sure permissions are right for files --> `wordpressFiles` (if not already done)
    1. Set ownership `chown -R $USER:www-data wordpressFiles` and permissions `chmod -R 774 wordpressFiles`
    2. Set group Id `chmod -R g+s wordpressFiles` - means that all new files and subdirectories created in it will be given the same group as the parent
-   3. This allows editing of the wordpress files without using `sudo` outside of the container.
-2. Create file `.env` (example `.env-example`) permissions set to `chmod 660 .env`
-   1. Only allow owner, and group read and write permission, and none for other users.
-3. Set a `CONTAINER_NAME` and `PORT` to your new `.env` file and the `DB_..` variables.
-4. Confirm `docker-compose.yml` file is set with `network_mode: bridge` and 👇:
+   3. This allows editing of the wordpress files without using `sudo` outside of the container
+3. Create file `.env` (example `.env-example`) permissions set to `chmod 660 .env`
+   1. Only allow owner, and group read and write permission, and none for other users
+4. Set a `CONTAINER_NAME` and `PORT` to your new `.env` file and the `DB_..` variables
+5. Confirm `docker-compose.yml` file is set with `network_mode: bridge` and 👇:
 
 ```yml
 extra_hosts:
    host.docker.internal: host-gateway
 ```
 
-5. Run `docker-compose up -d` to produce the files and bring the container up.
-6. Profit!
+6. Run `docker-compose up -d` to produce the files and bring the container up.
+7. Profit!
 
 ### Environment variables
 
