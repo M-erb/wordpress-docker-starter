@@ -1,0 +1,115 @@
+# Remove to get wordpress files into git repo
+# This is to prevent using old WP files when using this repo
+wordpressFiles/*
+
+############################
+# OS X
+############################
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+.Spotlight-V100
+.Trashes
+._*
+
+
+############################
+# Linux
+############################
+
+*~
+
+
+############################
+# Windows
+############################
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+
+############################
+# Packages
+############################
+
+*.7z
+*.csv
+*.dat
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.seed
+*.so
+*.swo
+*.swp
+*.swn
+*.swm
+*.out
+*.pid
+
+
+############################
+# Logs and databases
+############################
+
+.tmp
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+*.data
+cacheDB/*
+log/*
+.log/*
+logs/*
+.logs/*
+
+############################
+# Misc.
+############################
+
+*#
+ssl
+.idea
+nbproject
+.env
+.env.dev
+.env.stag
+.dist
+datadump
+
+############################
+# general
+############################
+
+lib-cov
+lcov.info
+pids
+node_modules
+.node_history
+dist/
+wordpressFiles/wp-content/uploads
+
+############################
+# Tests
+############################
+
+testApp
+coverage

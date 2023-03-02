@@ -1,0 +1,22 @@
+{
+  "name": "commands",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ship.js",
+  "scripts": {
+    "start": "node ship.js",
+    "ship": "node ship.js"
+  },
+  "author": "merb",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "dotenv": "^16.0.1",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^8.1.2",
+    "node-notifier": "^10.0.1"
+  },
+  "volta": {
+    "node": "16.15.0"
+  }
+}
