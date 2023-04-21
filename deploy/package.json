@@ -5,6 +5,7 @@
   "main": "ship.js",
   "scripts": {
     "start": "node ship.js",
+    "deploy": "node ship.js",
     "ship": "node ship.js"
   },
   "author": "merb",
